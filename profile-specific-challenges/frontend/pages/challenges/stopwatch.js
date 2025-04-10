@@ -1,3 +1,5 @@
+import StopwatchComponent from "./stopwatch/main";
+
 export default function Stopwatch() {
   return (
     <>
@@ -9,19 +11,15 @@ export default function Stopwatch() {
         <br />
         <br />
         <ol>
-          <li>
-            You should be able to start and pause and reset the stopwatch at
-            please.
-          </li>
+          <li>You should be able to start and pause and reset the stopwatch at please.</li>
           <li>It should show seconds and milliseconds.</li>
         </ol>
         <p>
-          In a real interview situation you should be able to have the main
-          functionalities (without styles) in 60 minutes.
+          In a real interview situation you should be able to have the main functionalities (without
+          styles) in 60 minutes.
         </p>
         <p>
-          Hint: To successfully complete this challenge you should first
-          complete the{" "}
+          Hint: To successfully complete this challenge you should first complete the{" "}
           <a
             href={
               "https://github.com/conanbatt/interview-ready/tree/main/profile-specific-challenges/frontend/pages/challenges"
@@ -33,6 +31,8 @@ export default function Stopwatch() {
           module in this repo.
         </p>
       </div>
+      <hr />
+      <StopwatchComponent />
     </>
   );
 }
