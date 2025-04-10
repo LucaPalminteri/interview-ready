@@ -1,3 +1,5 @@
+import WeatherComponent from "./weather/main";
+
 export default function Stopwatch() {
   return (
     <>
@@ -19,23 +21,22 @@ export default function Stopwatch() {
         />
         <br />
         <ol>
-          <li>
-            You should be able to handle initial, loading and error states.
-          </li>
+          <li>You should be able to handle initial, loading and error states.</li>
           <li>Weather must be shown in Celsius.</li>
           <li>
-            This challenge can be approached in many ways, to solve it
-            gracefully it matters what kind strategies we use and how we
-            organize the code.
+            This challenge can be approached in many ways, to solve it gracefully it matters what
+            kind strategies we use and how we organize the code.
           </li>
           <li>No JS libraries allowed.</li>
         </ol>
         <p>Prerequisites: You should get an API Key from Accuweather.</p>
         <p>
-          In a real interview situation you should be able to have the main
-          functionalities (without styles) in 45 minutes.
+          In a real interview situation you should be able to have the main functionalities (without
+          styles) in 45 minutes.
         </p>
       </div>
+      <hr />
+      <WeatherComponent />
     </>
   );
 }
